@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Kieren Blog,Kieren 博客,PHP,Linux,HTML,CSS,js">
+    <meta name="Description" content="Kieren's Blog Kieren的个人博客 分享互联网技术 记录生活">
+    <title>Kieren博客 - 主页</title>
+
+    <link href='bootstrap.min.css' rel='stylesheet'>
+    <link href='index.css' rel='stylesheet'>
+    <link href='posts.css' rel='stylesheet'>
+</head>
+
+<body>
+<div class='main-header'>
+    <div id="blogTitle">
+        <h2>Kieren博客</h2>
+        <h5>Love Coding, Enjoy Life!</h5>
+        <canvas id="bubbleCanvas" width="241" height="240">你的浏览器版本过低</canvas>
+    </div>
+    <div class='nav row'>
+        <a class="animation" href="/">文章 | Articles</a>
+        <a class="animation" href="/">简介 | About</a>
+    </div>
+</div>
+
+<div class="content-warp">
+    <div class="container">
+        <div class="row">
+
+            <!--start main content aera-->
+            <div class="col-md-9  main-content">
+
+                <div class="post nav-info  animation ">
+                    <p class="posts-info">推荐阅读</p>
+                    <p class="post-cnt">共 9 篇文章</p>
+                </div>
+
+                <div class="post animation">
+                    <a class="featured" title="推荐" ></a>
+
+                    <p class='time'>作者: Kieren &nbsp; 2016.08/02</p>
+
+
+
+                    <p class='descript'>
+                        mac os，unix / linux 开发神器，精准而优雅。
+                    </p>
+
+                </div>
+                <div class="post animation">
+                    <a class="featured" title="推荐" ></a>
+
+                    <h4 class='post-title'>
+                        <a  href="#" class='animation'>Python学习推荐</a>
+                    </h4>
+                    <p class='time'>作者: Kieren &nbsp; 2016.08.01</p>
+
+
+                    <img src='python.png' alt='python'>
+                    <p class='descript'>
+                       &nbsp; Python学习的资料千千万万种，而此站化繁为简，词句生动形象，并用实例证明阐述抽象学习问题...</p>
+                </div>
+                <div class="post animation">
+                    <a class="featured" title="推荐" ></a>
+                    <h4 class='post-title'>
+                        <a  href="#" class='animation'>几部治愈系动画电影推荐(图)</a>
+                    </h4>
+                    <p class='time'>作者: Kieren &nbsp; 2016.04.08</p>
+
+
+                    <img src='yhzs1.jpg' alt=''>
+                    <p class='descript'>
+                        看了几部‘唯美’的动画电影（只能这样形容了吧），感触还是比较深的。美好、期盼与现实都在里面，这便是所谓的命运吧。
+                    </p>
+
+                    <div class="post-footer">
+                    </div>
+                </div>
+                <div class="post animation">
+                    <a class="featured" title="推荐" ></a>
+
+                    <h4 class='post-title'>
+                        <a  href="#" class='animation'>IT职业培训专业视频网</a>
+                    </h4>
+                    <p class='time'>作者: Kieren &nbsp; 2016.03.24</p>
+
+
+                    <img src='jikexueyuan.jpg' alt='demo'>
+                    <p class='descript'>
+                        虽说看有些视频要会员，不过网上大把其视频的资源，一搜便知。
+                    </p>
+                </div>
+                <div class="post animation">
+                    <a class="featured" title="推荐" ></a>
+
+                    <h4 class='post-title'>
+                        <a  href="http://www.w3school.com.cn/" class='animation'>W3C school</a>
+                    </h4>
+                    <p class='time'>作者: Kieren &nbsp; 2016.01.28</p>
+
+
+
+                    <p class='descript'>
+                        各种语言，前端后台，只要你想学，大部分都能在这里找到，并同时收纳众多的标准。
+                    </p>
+
+                    <div class="post-footer">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 sidebar">
+                <div class="sidebar-content">
+                    <!-- start search area -->
+                    <form class="form-horizontal" role="form"  action="/" method="GET">
+                        <input  id="search"  class="form-control" name="s" type="text" value="" >
+                        <button type="submit" class="animation red-btn">搜 索</button>
+                    </form>
+
+                    <!-- start info area -->
+                    <div class="card">
+                        <div class="header"></div>
+                        <div class="avater">
+                            <img alt="avater" src="2.jpg">
+                        </div>
+                        <div class="content">
+                            <h3>Kieren</h3>
+                            <ul class="status">
+                                <li><b>25</b><br>文章</li>
+                                <li><b>9</b><br>精选</li>
+                                <li><b>8</b><br>分类</li>
+                            </ul>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class='main-footer'>
+    <div class="container">
+        <div class="logo">
+            Kieren BLOG
+        </div>
+        <p>
+            &nbsp; Kieren's original blog.
+            <br>
+            「keep calm and carry on」
+        </p>
+    </div>
+
+    <h5 class="copyright text-center">
+        &copy; 2016 Kieren |&nbsp;  UESTC &nbsp;|&nbsp;
+        <a href='#'>管理</a>
+    </h5>
+</div>
+
+<script src="bubble.js"></script>
+</body>
+</html>
