@@ -1,0 +1,82 @@
+body {
+    color:black;
+    background: #CDC5BC;
+    font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+.header{
+    background-image: url("img/9.jpg") ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 50px;
+
+}
+.img-circle{
+    border-radius:50%;
+}
+.header h1{
+    text-align: left;
+    padding-top:100px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+}
+.avatar{
+    margin-top: 50px;
+    margin-left: 350px;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+div.post {
+    margin-bottom: 30px;
+    margin-left: 170px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    float: left;
+}
+.animation{
+    transition-duration: 0.5s;
+}
+.card{
+    margin-top: 0px;
+}
+.img-thumbnail{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.show{
+    margin-bottom: 30px;
+    margin-left: 700px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    float: left;
+}
+.sidebar{
+    align-content: center;
+    float: none;
+}
+.sidebar ul{
+    list-style-type: none;
+
+}
+.sidebar p{
+    color: #67a5cd;
+}
+.frame{
+    border: 1px solid white;
+    background:#CDC5BC ;
+    margin-left: 2px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
+}

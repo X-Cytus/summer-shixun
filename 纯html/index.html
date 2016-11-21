@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Myself</title>
+    <link href="self.css" rel="stylesheet">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        var documentHeight = 0;
+        var topPadding = 70;
+        $(function() {
+            var offset = $("#scroll").offset();
+            documentHeight = $(document).height();
+            $(window).scroll(function() {
+                var sideBarHeight = $("#scroll").height();
+                if ($(window).scrollTop() > offset.top) {
+                    var newPosition = ($(window).scrollTop() - offset.top) + topPadding;
+                    var maxPosition = documentHeight - (sideBarHeight + 368);
+                    if (newPosition > maxPosition) {
+                        newPosition = maxPosition;
+                    }
+                    $("#scroll").stop().animate({
+                        marginTop: newPosition
+                    });
+                } else {
+                    $("#scroll").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header" >
+        <h1>What I Like</h1>
+    </div>
+    <div class="card">
+        <div class="avatar">
+            <img class="img-circle" src="img/2.jpg">
+            <h2 align="center">Kieren</h2>
+            <p align="left">推荐</p>
+            <hr>
+            <div class="sidebar" id="scroll">
+                <ul>
+                    <li class="frame"><a href="#section-1">二次元弹幕网</a></li>
+                    <li class="frame"><a href="#section-2">鬼畜赛高</a></li>
+                    <li class="frame"><a href="#section-3">最爱萝莉</a></li>
+                    <li class="frame"><a href="#section-4">少女治愈</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="post" >
+        <h3 align="center" ><a href="http://www.bilibili.com "  target=_blank class="animation" id="section-1" >二次元弹幕网</a></h3>
+        <h3 align="center"><img src="img/6.jpg" class="img-thumbnail"></h3>
+        <p  align="center"><strong>虽不是天朝二次元弹幕网鼻祖，但现在人气已超过鼻祖很久...</strong></p>
+        <hr>
+    </div>
+    <div class="show">
+        <h3 class="post-title" align="center" ><a href="http://www.bilibili.com/video/av4514728/" target=_blank id="section-2">鬼畜赛高</a></h3>
+        <h3 align="center"><img src="img/1.gif" class="img-thumbnail" width="800"></h3>
+        <p class="descript" align="center"><strong>在此献上鬼畜王者，哈哈哈，每日必吸，愉悦身心，忘掉烦恼</strong></p>
+        <hr>
+    </div>
+    <div class="show">
+        <h3 class="post-title" align="center" id="section-3">最爱萝莉</h3>
+        <h3 align="center"><img src="img/8.png" class="img-thumbnail" width="800" height="400"></h3>
+        <p class="descript" align="center"><strong>恨妹不成穹，恨穹不是妹</strong></p>
+        <hr>
+    </div>
+    <div class="show">
+        <h3 class="post-title" align="center" id="section-4">少女治愈</h3>
+        <h3 align="center"><img src="img/8.jpeg" class="img-thumbnail" width="800"></h3>
+        <p class="descript" align="center"><strong>此生无悔入四月，来世愿作友人A</strong></p>
+    </div>
+
+</body>
+
+</html>
